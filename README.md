@@ -1,3 +1,10 @@
+# Open Data Feed - Sydney Shopping Basket
+The objective of this project is to highlight the importance of Open Data. This is important today as the Government publish free consumable data across many departments and actively encourage developers to find new innovatives uses for this data that ultimately enhances the life of the communities in which we live.
+
+This example tracks the prices increases/decreases of Woolies & Coles from week to week. It takes a typical shopping basket - not items that are necessarily bought every week, but typical items that are generally bought by shoppers in Sydney - and totals the weekly price for both supermarkets - tracking the percentage and absolute changes from week to week. It should provide fodder for some interesting front-end sites.
+
+Note that sometimes the items in the basket will change due to searches for current items not working. This is currently manual so one must go though the data to find out if the items are exactly the same as last week. This again could be a feature of a front-end build. At some point, the data feed may contain shopping basket week to week changes - if any - so that the developer will not have to work it out from an 'id' comparison for example. Note that in order to do this comparison, the developer would have to store files, week to week to compare them.
+
 ## Shopping basket items
 The actual items in the shopping basket can be found here:
 https://www.choice.com.au/shopping/everyday-shopping/supermarkets/articles/how-we-surveyed-the-supermarkets
