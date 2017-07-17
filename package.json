@@ -1,0 +1,31 @@
+{
+  "name": "groceryp",
+  "version": "1.0.0",
+  "description": "scrape grocery prices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Januarius",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "fstream": "^1.0.11",
+    "https": "^1.0.0",
+    "json-format": "^1.0.1",
+    "jsonfile": "^3.0.1",
+    "moment": "^2.18.1",
+    "node-env-file": "^0.1.8",
+    "node-fetch": "^1.7.1",
+    "node-schedule": "^1.2.3",
+    "nodejs-fs-utils": "^1.0.26",
+    "request": "^2.81.0",
+    "rmdir": "^1.2.0",
+    "satori-sdk-js": "^1.0.1",
+    "tar": "^3.1.5",
+    "zlib": "^1.0.5"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "hits": 1,
+  "items": [
+    {
+      "id": 3731,
+      "category": "Snacks & Sweets",
+      "category1": null,
+      "category2": "Chocolate",
+      "category3": "Milk Chocolate",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Dairy Milk Chocolate Large Block",
+      "brand": "Cadbury",
+      "brandAndName": "Cadbury Dairy Milk Chocolate Large Block ",
+      "volumeSize": "350g",
+      "imageFileName": "31424.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "cadbury-dairy-milk-chocolate-large-block-350-g",
+      "supplierProducts": [
+        {
+          "supplierProductId": 3731,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 5,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": "g",
+          "cupPrice": 14.29,
+          "cupDefinition": "per kg",
+          "cupWeight": 350,
+          "cupString": "per kg",
+          "available": true
+        },
+        {
+          "supplierProductId": 31424,
+          "supplierCode": "WOOLIES",
+          "supplierName": "Woolworths",
+          "price": 5,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": "g",
+          "cupPrice": 14.29,
+          "cupDefinition": "per kg",
+          "cupWeight": 350,
+          "cupString": "per kg",
+          "available": true
+        }
+      ]
+    }
+  ],
+  "isLastPage": true,
+  "ageRestriction": null,
+  "postcode": 411,
+  "hasDOB": false,
+  "underAge": false,
+  "filters": [
+    {
+      "code": "BRAND",
+      "metaDatas": [
+        {
+          "name": "Cadbury",
+          "url": null,
+          "count": 1,
+          "id": null,
+          "parentId": null,
+          "level": null
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY1",
+      "metaDatas": [
+        {
+          "name": "Snacks & Sweets",
+          "url": "snacks-sweets",
+          "count": 1,
+          "id": 40156,
+          "parentId": null,
+          "level": 1
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY2",
+      "metaDatas": [
+        {
+          "name": "Chocolate",
+          "url": "chocolate",
+          "count": 1,
+          "id": 41198,
+          "parentId": 40156,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY3",
+      "metaDatas": [
+        {
+          "name": "Milk Chocolate",
+          "url": "milk-chocolate",
+          "count": 1,
+          "id": 41213,
+          "parentId": 41198,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "code": "VOLUMESIZE",
+      "metaDatas": [
+        {
+          "name": "350g ",
+          "url": null,
+          "count": 1,
+          "id": null,
+          "parentId": null,
+          "level": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "hits": 3,
+  "items": [
+    {
+      "id": 417,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Fruit",
+      "category3": "Apples",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Granny Smith Apples",
+      "brand": null,
+      "brandAndName": "Granny Smith Apples ",
+      "volumeSize": "",
+      "imageFileName": "24085.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "granny-smith-apples-each",
+      "supplierProducts": [
+        {
+          "supplierProductId": 417,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 0.54,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 0.54,
+          "cupDefinition": "each",
+          "cupWeight": null,
+          "cupString": "each",
+          "available": true
+        },
+        {
+          "supplierProductId": 24085,
+          "supplierCode": "WOOLIES",
+          "supplierName": "Woolworths",
+          "price": 0.67,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 0.67,
+          "cupDefinition": "each",
+          "cupWeight": null,
+          "cupString": "each",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 419,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Fruit",
+      "category3": "Apples",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Granny Smith Apples Prepacked",
+      "brand": null,
+      "brandAndName": "Granny Smith Apples Prepacked ",
+      "volumeSize": "1kg",
+      "imageFileName": "24086.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "granny-smith-apples-prepacked-1000-g",
+      "supplierProducts": [
+        {
+          "supplierProductId": 419,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 3.5,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": "g",
+          "cupPrice": 3.5,
+          "cupDefinition": "per kg",
+          "cupWeight": 1000,
+          "cupString": "per kg",
+          "available": true
+        },
+        {
+          "supplierProductId": 24086,
+          "supplierCode": "WOOLIES",
+          "supplierName": "Woolworths",
+          "price": 3.7,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": "g",
+          "cupPrice": 3.7,
+          "cupDefinition": "per kg",
+          "cupWeight": 1000,
+          "cupString": "per kg",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 23416,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Fruit",
+      "category3": "Apples",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Organic Granny Smith Apples Prepacked",
+      "brand": null,
+      "brandAndName": "Organic Granny Smith Apples Prepacked ",
+      "volumeSize": "1kg",
+      "imageFileName": "23416.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "organic-granny-smith-apples-prepacked-1000-g",
+      "supplierProducts": [
+        {
+          "supplierProductId": 23416,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 8,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": "g",
+          "cupPrice": 8,
+          "cupDefinition": "per kg",
+          "cupWeight": 1000,
+          "cupString": "per kg",
+          "available": true
+        },
+        {
+          "supplierProductId": 51848,
+          "supplierCode": "WOOLIES",
+          "supplierName": "Woolworths",
+          "price": 7,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": "g",
+          "cupPrice": 7,
+          "cupDefinition": "per kg",
+          "cupWeight": 1000,
+          "cupString": "per kg",
+          "available": true
+        }
+      ]
+    }
+  ],
+  "isLastPage": true,
+  "ageRestriction": null,
+  "postcode": 411,
+  "hasDOB": false,
+  "underAge": false,
+  "filters": [
+    {
+      "code": "CATEGORY1",
+      "metaDatas": [
+        {
+          "name": "Fruit & Vegetables",
+          "url": "fruit-vegetables",
+          "count": 3,
+          "id": 40544,
+          "parentId": null,
+          "level": 1
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY2",
+      "metaDatas": [
+        {
+          "name": "Fruit",
+          "url": "fruit",
+          "count": 3,
+          "id": 40545,
+          "parentId": 40544,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY3",
+      "metaDatas": [
+        {
+          "name": "Apples",
+          "url": "apples",
+          "count": 3,
+          "id": 40550,
+          "parentId": 40545,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "code": "VOLUMESIZE",
+      "metaDatas": [
+        {
+          "name": "1000g ",
+          "url": null,
+          "count": 2,
+          "id": null,
+          "parentId": null,
+          "level": 0
+        },
+        {
+          "name": "each",
+          "url": null,
+          "count": 1,
+          "id": null,
+          "parentId": null,
+          "level": 0
+        }
+      ]
+    }
+  ]
+}

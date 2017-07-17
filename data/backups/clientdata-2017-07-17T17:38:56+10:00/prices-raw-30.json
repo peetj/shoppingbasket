@@ -1,0 +1,330 @@
+{
+  "hits": 5,
+  "items": [
+    {
+      "id": 493,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Vegetables",
+      "category3": "Broccoli",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Organic Broccoli",
+      "brand": null,
+      "brandAndName": "Organic Broccoli ",
+      "volumeSize": "",
+      "imageFileName": "493.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "organic-broccoli-each",
+      "supplierProducts": [
+        {
+          "supplierProductId": 493,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 4.83,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 4.83,
+          "cupDefinition": "each",
+          "cupWeight": null,
+          "cupString": "each",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 617,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Vegetables",
+      "category3": "Broccoli",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Broccoli",
+      "brand": null,
+      "brandAndName": "Broccoli ",
+      "volumeSize": "",
+      "imageFileName": "617.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "broccoli-each",
+      "supplierProducts": [
+        {
+          "supplierProductId": 617,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 1.87,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 1.87,
+          "cupDefinition": "each",
+          "cupWeight": null,
+          "cupString": "each",
+          "available": true
+        },
+        {
+          "supplierProductId": 24198,
+          "supplierCode": "WOOLIES",
+          "supplierName": "Woolworths",
+          "price": 1.35,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 1.35,
+          "cupDefinition": "each",
+          "cupWeight": null,
+          "cupString": "each",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 620,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Vegetables",
+      "category3": "Broccoli",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Baby Broccoli",
+      "brand": null,
+      "brandAndName": "Baby Broccoli ",
+      "volumeSize": "",
+      "imageFileName": "24200.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "baby-broccoli-bunch",
+      "supplierProducts": [
+        {
+          "supplierProductId": 620,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 2,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 2,
+          "cupDefinition": "bunch",
+          "cupWeight": null,
+          "cupString": "bunch",
+          "available": true
+        },
+        {
+          "supplierProductId": 24200,
+          "supplierCode": "WOOLIES",
+          "supplierName": "Woolworths",
+          "price": 3,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": null,
+          "perGroupPrice": null,
+          "weightDefinition": null,
+          "cupPrice": 3,
+          "cupDefinition": "bunch",
+          "cupWeight": null,
+          "cupString": "bunch",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 622,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Vegetables",
+      "category3": "Broccoli",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Chinese Broccoli",
+      "brand": null,
+      "brandAndName": "Chinese Broccoli ",
+      "volumeSize": "",
+      "imageFileName": "52394.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "chinese-broccoli-bunch",
+      "supplierProducts": [
+        {
+          "supplierProductId": 622,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 2.5,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": 0,
+          "perGroupPrice": 0,
+          "weightDefinition": null,
+          "cupPrice": 2.5,
+          "cupDefinition": "bunch",
+          "cupWeight": null,
+          "cupString": "bunch",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 649,
+      "category": "Fruit & Vegetables",
+      "category1": null,
+      "category2": "Vegetables",
+      "category3": "Broccoli",
+      "category4": null,
+      "category1Url": null,
+      "category2Url": null,
+      "category3Url": null,
+      "category4Url": null,
+      "name": "Australian Broccoli Florets",
+      "brand": "Coles Fresh",
+      "brandAndName": "Coles Fresh Australian Broccoli Florets ",
+      "volumeSize": "150g",
+      "imageFileName": "649.jpg",
+      "collected": null,
+      "available": null,
+      "disableFromView": null,
+      "preferredSupplier": null,
+      "disableFromListory": null,
+      "url": "coles-fresh-australian-broccoli-florets-150-g",
+      "supplierProducts": [
+        {
+          "supplierProductId": 649,
+          "supplierCode": "COLES",
+          "supplierName": "Coles",
+          "price": 2,
+          "discount": 0,
+          "percentDiscount": 0,
+          "perGroupQuantity": 0,
+          "perGroupPrice": 0,
+          "weightDefinition": "g",
+          "cupPrice": 13.33,
+          "cupDefinition": "per kg",
+          "cupWeight": 150,
+          "cupString": "per kg",
+          "available": true
+        }
+      ]
+    }
+  ],
+  "isLastPage": true,
+  "ageRestriction": null,
+  "postcode": 411,
+  "hasDOB": false,
+  "underAge": false,
+  "filters": [
+    {
+      "code": "BRAND",
+      "metaDatas": [
+        {
+          "name": "Coles Fresh",
+          "url": null,
+          "count": 1,
+          "id": null,
+          "parentId": null,
+          "level": null
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY1",
+      "metaDatas": [
+        {
+          "name": "Fruit & Vegetables",
+          "url": "fruit-vegetables",
+          "count": 5,
+          "id": 40544,
+          "parentId": null,
+          "level": 1
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY2",
+      "metaDatas": [
+        {
+          "name": "Vegetables",
+          "url": "vegetables",
+          "count": 5,
+          "id": 40607,
+          "parentId": 40544,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "code": "CATEGORY3",
+      "metaDatas": [
+        {
+          "name": "Broccoli",
+          "url": "broccoli",
+          "count": 5,
+          "id": 40612,
+          "parentId": 40607,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "code": "VOLUMESIZE",
+      "metaDatas": [
+        {
+          "name": "150g ",
+          "url": null,
+          "count": 1,
+          "id": null,
+          "parentId": null,
+          "level": 0
+        },
+        {
+          "name": "bunch",
+          "url": null,
+          "count": 2,
+          "id": null,
+          "parentId": null,
+          "level": 0
+        },
+        {
+          "name": "each",
+          "url": null,
+          "count": 2,
+          "id": null,
+          "parentId": null,
+          "level": 0
+        }
+      ]
+    }
+  ]
+}
