@@ -1,0 +1,10 @@
+45756
+$PID is NOT empty
+Killing process with pid=45756
+Restarting server.js...
+
+> groceryp@1.0.0 publish /Users/peetj/github/shoppingbasket
+> node ./src/server/server.js
+
+./restart.sh: line 23: 45751 Killed: 9               npm run publish
+server.js running on: 45828

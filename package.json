@@ -4,6 +4,10 @@
   "description": "scrape grocery prices",
   "main": "index.js",
   "scripts": {
+    "all": "node ./src/client/main.js",
+    "getprices": "node ./src/client/client.js",
+    "generatefeed": "node ./src/client/generate-feed-data.js",
+    "publish": "node ./src/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Peter Januarius",
@@ -11,10 +15,13 @@
   "dependencies": {
     "axios": "^0.16.2",
     "cheerio": "^1.0.0-rc.1",
+    "debug": "^3.1.0",
     "express": "^4.15.3",
     "fs": "0.0.1-security",
+    "fs-extra": "^4.0.2",
     "fstream": "^1.0.11",
     "https": "^1.0.0",
+    "js-object-pretty-print": "^0.3.0",
     "json-format": "^1.0.1",
     "jsonfile": "^3.0.1",
     "moment": "^2.18.1",
@@ -22,9 +29,11 @@
     "node-fetch": "^1.7.1",
     "node-schedule": "^1.2.3",
     "nodejs-fs-utils": "^1.0.26",
+    "pad": "^2.0.3",
     "request": "^2.81.0",
     "rmdir": "^1.2.0",
     "satori-sdk-js": "^1.0.1",
+    "supports-color": "^5.0.0",
     "tar": "^3.1.5",
     "zlib": "^1.0.5"
   }

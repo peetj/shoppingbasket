@@ -1,58 +1,35 @@
-[{
-    "weekNum": 1,
-    "date": "2017-06-28",
-    "total": [{
-        "coles": 149.95
-    }, {
-        "woolies": 138.12
-    }],
-    "changeFromPreviousWeek": [{
-        "chain": "COLES",
-        "changeUNIT": "AUD",
-        "changeAmount": 0,
-        "changePercent": 0
-    }, {
-        "chain": "WOOLIES",
-        "changeUNIT": "AUD",
-        "changeAmount": 0,
-        "changePercent": 0
-    }]
-}, {
-    "weekNum": 2,
-    "date": "2017-07-05",
-    "total": [{
-        "coles": 152.32
-    }, {
-        "woolies": 141.21
-    }],
-    "changeFromPreviousWeek": [{
-        "chain": "COLES",
-        "changeUNIT": "AUD",
-        "changeAmount": 2.37,
-        "changePercent": 1.58
-    }, {
-        "chain": "WOOLIES",
-        "changeUNIT": "AUD",
-        "changeAmount": 3.09,
-        "changePercent": 2.24
-    }]
-}, {
-    "weekNum": 3,
-    "date": "2017-07-12",
-    "total": [{
-        "coles": 199.55
-    }, {
-        "woolies": 195.17
-    }],
-    "changeFromPreviousWeek": [{
-        "chain": "COLES",
-        "changeUNIT": "AUD",
-        "changeAmount": 47.23,
-        "changePercent": 31.01
-    }, {
-        "chain": "WOOLIES",
-        "changeUNIT": "AUD",
-        "changeAmount": 53.96,
-        "changePercent": 38.21
-    }]
-}]
+[
+    {
+        "weekNum": 1,
+        "calendarWeekNum": 48,
+        "date": "2017-11-28",
+        "total": [
+            {
+                "coles": 160.17
+            },
+            {
+                "woolies": 149.29
+            },
+            {
+                "colesDiscountTotal": 27.34
+            },
+            {
+                "wooliesDiscountTotal": 16.93
+            }
+        ],
+        "changeFromPreviousWeek": [
+            {
+                "chain": "COLES",
+                "changeUNIT": "AUD",
+                "changeAmount": 0,
+                "changePercent": 0
+            },
+            {
+                "chain": "WOOLIES",
+                "changeUNIT": "AUD",
+                "changeAmount": 0,
+                "changePercent": 0
+            }
+        ]
+    }
+]

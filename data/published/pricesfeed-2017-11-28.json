@@ -1,0 +1,310 @@
+{
+    "id": 1511831753034,
+    "items": [
+        {
+            "id": 251,
+            "sequenceNumber": 0,
+            "name": "Rustic White Bread",
+            "volumeSize": "750g",
+            "colesPrice": 3.4,
+            "discount": 0.5,
+            "wooliesPrice": 3.5
+        },
+        {
+            "id": 417,
+            "sequenceNumber": 1,
+            "name": "Granny Smith Apples",
+            "volumeSize": "",
+            "colesPrice": 0.81,
+            "discount": 0,
+            "wooliesPrice": 0.86
+        },
+        {
+            "id": 437,
+            "sequenceNumber": 2,
+            "name": "Bananas",
+            "volumeSize": "",
+            "colesPrice": 0.36,
+            "discount": 0,
+            "wooliesPrice": 0.6
+        },
+        {
+            "id": 523,
+            "sequenceNumber": 3,
+            "name": "Greenhouse Truss Tomatoes",
+            "volumeSize": "",
+            "colesPrice": 0.42,
+            "discount": 0,
+            "wooliesPrice": 0.91
+        },
+        {
+            "id": 550,
+            "sequenceNumber": 4,
+            "name": "Juicing Carrot",
+            "volumeSize": "5kg",
+            "colesPrice": 2.98,
+            "discount": 0,
+            "wooliesPrice": 6
+        },
+        {
+            "id": 617,
+            "sequenceNumber": 5,
+            "name": "Broccoli",
+            "volumeSize": "",
+            "colesPrice": 1.36,
+            "discount": 0,
+            "wooliesPrice": 1.2
+        },
+        {
+            "id": 1426,
+            "sequenceNumber": 6,
+            "name": "Full Cream Milk",
+            "volumeSize": "1L",
+            "colesPrice": 2.9,
+            "discount": 0,
+            "wooliesPrice": 2.9
+        },
+        {
+            "id": 1529,
+            "sequenceNumber": 7,
+            "name": "Free Range X Large Eggs 12 pack",
+            "volumeSize": "800g",
+            "colesPrice": 6.8,
+            "discount": 0,
+            "wooliesPrice": 7
+        },
+        {
+            "id": 1782,
+            "sequenceNumber": 8,
+            "name": "Natural Tasty Cheese Slices 15 pack",
+            "volumeSize": "250g",
+            "colesPrice": 6.26,
+            "discount": 0,
+            "wooliesPrice": 5.7
+        },
+        {
+            "id": 2102,
+            "sequenceNumber": 9,
+            "name": "Traditional Spreadable Butter Blend",
+            "volumeSize": "375g",
+            "colesPrice": 4.8,
+            "discount": 0,
+            "wooliesPrice": 4.8
+        },
+        {
+            "id": 2567,
+            "sequenceNumber": 10,
+            "name": "Breakfast Plus Cereal",
+            "volumeSize": "410g",
+            "colesPrice": 4.95,
+            "discount": 0,
+            "wooliesPrice": 4.49
+        },
+        {
+            "id": 2954,
+            "sequenceNumber": 11,
+            "name": "Tim Tams Original Chocolate",
+            "volumeSize": "200g",
+            "colesPrice": 4.02,
+            "discount": 1.15,
+            "wooliesPrice": 3.65
+        },
+        {
+            "id": 3747,
+            "sequenceNumber": 12,
+            "name": "Family Block Chocolate Hazelnut",
+            "volumeSize": "200g",
+            "colesPrice": 5.5,
+            "discount": 1.5,
+            "wooliesPrice": 5
+        },
+        {
+            "id": 4795,
+            "sequenceNumber": 13,
+            "name": "Plain Flour",
+            "volumeSize": "2kg",
+            "colesPrice": 5.5,
+            "discount": 0,
+            "wooliesPrice": 5
+        },
+        {
+            "id": 4879,
+            "sequenceNumber": 14,
+            "name": "White Sugar",
+            "volumeSize": "1kg",
+            "colesPrice": 2.21,
+            "discount": 0,
+            "wooliesPrice": 2
+        },
+        {
+            "id": 5642,
+            "sequenceNumber": 15,
+            "name": "Strawberry Jam",
+            "volumeSize": "370g",
+            "colesPrice": 5.72,
+            "discount": 0,
+            "wooliesPrice": 5.2
+        },
+        {
+            "id": 6425,
+            "sequenceNumber": 16,
+            "name": "Olive Oil Pure El Tradicional",
+            "volumeSize": "1L",
+            "colesPrice": 17.6,
+            "discount": 6,
+            "wooliesPrice": 14
+        },
+        {
+            "id": 6483,
+            "sequenceNumber": 17,
+            "name": "Penne Rigati Pasta No 18",
+            "volumeSize": "500g",
+            "colesPrice": 1.8,
+            "discount": 0,
+            "wooliesPrice": 1.95
+        },
+        {
+            "id": 7254,
+            "sequenceNumber": 18,
+            "name": "Scottish Sardines in Springwater",
+            "volumeSize": "110g",
+            "colesPrice": 2.92,
+            "discount": 0.7,
+            "wooliesPrice": 2.7
+        },
+        {
+            "id": 7680,
+            "sequenceNumber": 19,
+            "name": "Blend 43 Instant Coffee Granules",
+            "volumeSize": "150g",
+            "colesPrice": 10.34,
+            "discount": 1.9,
+            "wooliesPrice": 9.4
+        },
+        {
+            "id": 8056,
+            "sequenceNumber": 20,
+            "name": "Golden Crunch Frozen Potato Chips",
+            "volumeSize": "1kg",
+            "colesPrice": 4.73,
+            "discount": 0,
+            "wooliesPrice": 4.29
+        },
+        {
+            "id": 8272,
+            "sequenceNumber": 21,
+            "name": "Frozen Fish Fingers 15 pack",
+            "volumeSize": "375g",
+            "colesPrice": 6.16,
+            "discount": 1.1,
+            "wooliesPrice": 5.6
+        },
+        {
+            "id": 8499,
+            "sequenceNumber": 22,
+            "name": "Classic French Vanilla Ice Cream",
+            "volumeSize": "1L",
+            "colesPrice": 9.9,
+            "discount": 0,
+            "wooliesPrice": 9
+        },
+        {
+            "id": 8754,
+            "sequenceNumber": 23,
+            "name": "Frozen Peas",
+            "volumeSize": "1kg",
+            "colesPrice": 4.83,
+            "discount": 0,
+            "wooliesPrice": 4.39
+        },
+        {
+            "id": 8815,
+            "sequenceNumber": 24,
+            "name": "Coke",
+            "volumeSize": "1.25L",
+            "colesPrice": 3.14,
+            "discount": 0,
+            "wooliesPrice": 1.42
+        },
+        {
+            "id": 9240,
+            "sequenceNumber": 25,
+            "name": "100% Orange Juice Box",
+            "volumeSize": "200ml x 6 pack",
+            "colesPrice": 5.17,
+            "discount": 0,
+            "wooliesPrice": 5.4
+        },
+        {
+            "id": 12911,
+            "sequenceNumber": 26,
+            "name": "Super Strength Lemon Dishwashing Liquid",
+            "volumeSize": "900ml",
+            "colesPrice": 7.65,
+            "discount": 3.48,
+            "wooliesPrice": 6.95
+        },
+        {
+            "id": 12957,
+            "sequenceNumber": 27,
+            "name": "Sensitive Front & Top Loader Laundry Liquid",
+            "volumeSize": "2L",
+            "colesPrice": 22,
+            "discount": 0,
+            "wooliesPrice": 19.99
+        },
+        {
+            "id": 15421,
+            "sequenceNumber": 28,
+            "name": "3ply Large 'N' Thick Facial Tissues",
+            "volumeSize": "95 pack",
+            "colesPrice": 2.86,
+            "discount": 0.6,
+            "wooliesPrice": 2.6
+        },
+        {
+            "id": 15634,
+            "sequenceNumber": 29,
+            "name": "Milk & Honey Liquid Softwash Pump",
+            "volumeSize": "250ml",
+            "colesPrice": 3.08,
+            "discount": 0,
+            "wooliesPrice": 2.79
+        }
+    ],
+    "weekOnWeek": [
+        {
+            "weekNum": 1,
+            "calendarWeekNum": 48,
+            "date": "2017-11-28",
+            "total": [
+                {
+                    "coles": 160.17
+                },
+                {
+                    "woolies": 149.29
+                },
+                {
+                    "colesDiscountTotal": 27.34
+                },
+                {
+                    "wooliesDiscountTotal": 16.93
+                }
+            ],
+            "changeFromPreviousWeek": [
+                {
+                    "chain": "COLES",
+                    "changeUNIT": "AUD",
+                    "changeAmount": 0,
+                    "changePercent": 0
+                },
+                {
+                    "chain": "WOOLIES",
+                    "changeUNIT": "AUD",
+                    "changeAmount": 0,
+                    "changePercent": 0
+                }
+            ]
+        }
+    ]
+}

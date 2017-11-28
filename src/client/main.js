@@ -1,6 +1,6 @@
 const env = require('node-env-file');
 const childProcess = require('child_process');
-const DATA_PATH_ENV = '../..';
+const DATA_PATH_ENV = '.';
 
 // Load environment file
 env(`${DATA_PATH_ENV}/.env`);
@@ -34,18 +34,13 @@ function runScript(scriptPath, args, callback) {
 
 // Now we can run a script and invoke a callback when complete, e.g.
 console.log('BEGIN...\n');
-runScript('./client.js', process.argv.slice(2), function (err) {
+runScript('./src/client/client.js', process.argv.slice(2), function (err) {
     if (err) throw err;
     console.log('Finished running client.js');
 
-    runScript('./generate-prices.js', [process.env.DATE], function (err) {
+    runScript('./src/client/generate-feed-data.js', [process.env.DATE], function (err) {
         if (err) throw err;
-        console.log('\nFinished running generate-prices.js');
-
-        runScript('./generate-feed-data.js', [process.env.DATE], function (err) {
-            if (err) throw err;
-            console.log('\nFinished running generate-feed-data.js');
-            console.log('END');
-        });
+        console.log('\nFinished running generate-feed-data.js');
+        console.log('END');
     });
 });

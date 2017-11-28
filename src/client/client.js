@@ -4,144 +4,110 @@ const rmdir = require("rmdir");
 const moment = require("moment");
 const request = require("request");
 const jsonFormat = require("json-format");
-const DATA_PATH_CLIENT = '../../data/client';
-const DATA_PATH_BACKUP = '../../data/backups'
-const DATA_FILE_CLIENT_BACKUP_NAME = 'clientdata-';
-const DATA_FILE_CLIENT_BACKUP_EXT = '.tar.gz';
-const URL = 'https://api.frugl.com.au/api/v2/search/products';
-const START_ITEM = process.argv[2];
-const END_ITEM = process.argv[3];
-console.log("START_ITEM, END_ITEM", START_ITEM, END_ITEM)
-const keepFiles = process.argv.includes('-k') ? true : false ;
+const debug = require('debug')('shoppingbasket');
+const pad = require('pad');
 
-let _ctr = 0;
-let _searchTerms = [
-    'sunblest white bread',
-    'Cadbury Dairy Milk Chocolate Large Block',
-    'full cream milk',
-    'Butter',
-    'Cheese',
-    'Vanilla ice cream',
-    'Frozen peas',
-    'Chocolate biscuits',
-    'Beer battered frozen shoestring fries',
-    'Cola',
-    'Strawberry Jam',
-    'Cereal',
-    'Instant coffee',
-    'Orange juice',
-    'Cling wrap',
-    'Sardines',
-    'Olive oil',
-    'Tomatoes',
-    'Penne pasta',
-    'Plain flour',
-    'White sugar',
-    'Tissues',
-    'Hand wash',
-    'Detergent',
-    'Dishwashing liquid',
-    'Free range eggs',
-    'BBQ chicken kebabs',
-    'Fish fingers',
-    'Granny Smith apples',
-    'Bananas',
-    'Broccoli',
-    'Carrots',
-    'Washed potatoes',
-]
+const APP_NAME = 'Shopping Basket';
+const DATA_PATH_CLIENT = './data/client';
+const FILE_TYPE_LIST = 0;
+const FILE_TYPE_BASKET = 1;
 
-let _qs = {
-        locationId: 411,
-        pageNumber: 1,
-        pageSize: 40,
-    }
+const URL = 'https://api.frugl.com.au/api/v2/mylist/get/';
+const LIST_ID = 18655;
 
 let _options = {
     method: 'GET',
-    url: URL,
+    url: URL+LIST_ID,
     headers: {
-        'postman-token': 'a9d7e511-950e-fec4-c46a-b245d8e549a5',
+        'postman-token': 'e9c2c72f-abfb-3904-c44b-2de3cd6c391e',
         'cache-control': 'no-cache'
     }
-}
-
-// Check arguments are there otherwise EXIT !!!
-if(process.argv.length < 4){
-    console.log("Command format: node client.js {START_INDEX} {END_INDEX}");
-    return;
-}
-
-function backupData(){
-    fs.copy(DATA_PATH_CLIENT, `${DATA_PATH_BACKUP}/${DATA_FILE_CLIENT_BACKUP_NAME}${moment().format()}`, function (err) {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log("Successfully backed up data!");
-        cleanupDataDir();
-      }
-    }); //copies directory, even if it has subdirectories or files
-}
-
-function cleanupDataDir(){
-    console.log('clean up data dir....!');
-    // Clean up data directory if keepFiles was not specified in args!
-    if(!keepFiles){
-        let dir = DATA_PATH_CLIENT;
-        if (fs.existsSync(dir)){
-            rmdir(dir, function (err, dirs, files) {
-              console.log(dirs);
-              console.log(files);
-              console.log('\nAll files are removed\n');
-
-              // Re-create data directory
-              if (!fs.existsSync(dir)){
-                  fs.mkdirSync(dir);
-              }
-
-              // Start Requests!
-              startRequests();
-            });
-        }
-    }
-    else{
-        startRequests();
-    }
-}
-
-function startRequests() {
-    // Start Requests!
-    console.log('\nStarting Requests...', START_ITEM, END_ITEM);
-    searchForItem(START_ITEM, END_ITEM);
 }
 
 /**
  * Execute a single xhr request. If no errors then write out the
  * body to a file.
- * @param  {String} `item` the search term
  * @return n/a
  */
-function searchForItem(start, end){
-    _ctr = start;
-    let item = _searchTerms[_ctr];
-    _qs.searchTerms = item;
-    _options.qs = _qs;
-
+function searchForList(){
     request(_options, function(error, response, body) {
         if (error) throw new Error(error);
 
-        if(_ctr < end){
-            console.log('Request-', _ctr, ": ", item);
-            // Write out model to new file
-            let file = `${DATA_PATH_CLIENT}/prices-raw-${_ctr}.json`
-            jsonfile.writeFileSync(file, JSON.parse(body), {spaces: 2})
-
-            // Call the next item
-            searchForItem(++_ctr, end);
+        // Write out Report on items
+        if(debug.enabled){
+            printFeedReport(JSON.parse(body));
         }
+
+        // Generate basketItems for next process and write it
+        generateBasket(JSON.parse(body));
+
+        // Write out model to new file
+        writeToFile(FILE_TYPE_LIST, body);
     });
 }
 
+function generateBasket(pricelist) {
+    let items = pricelist.items;
+    let basket = [];
+
+    items.forEach((el, idx) => {
+        let item = {};
+        item.name = el.name;
+        el.supplierProducts.forEach((sp) => {
+            sp.supplierCode === "COLES" ? item.colesId = sp.supplierProductId : item.wooliesId = sp.supplierProductId;
+        })
+        basket.push(item);
+    })
+
+    // Write the basket object to a file
+    writeToFile(FILE_TYPE_BASKET, basket);
+}
+
+/**
+ * Writes some JSON to a file
+ * @param  {Number} fileType Type of file to write as different files may require different treatment
+ * @param  {Object} content  Body of response
+ * @return n/a
+ */
+function writeToFile(fileType, content) {
+    let file
+    if(fileType === FILE_TYPE_LIST){
+        file = `${DATA_PATH_CLIENT}/prices-raw-list-${moment().format('YYYY-M-D')}.json`
+        jsonfile.writeFileSync(file, JSON.parse(content), {spaces: 2})
+        debug(`Written: ${file}` )
+    }
+    else if(fileType === FILE_TYPE_BASKET){
+        file = `${DATA_PATH_CLIENT}/prices-raw-list-basket-${moment().format('YYYY-M-D')}.json`
+        jsonfile.writeFileSync(file, content, {spaces: 2})
+        debug(`Written: ${file}` )
+    }
+}
+
+function printFeedReport(pricelist) {
+    let colesTotalPrice = 0;
+    let colesTotalDiscount = 0;
+    let wooliesTotalPrice= 0;
+    let wooliesTotalDiscount = 0;
+    debug('******************************************************************************');
+    debug('NUM ITEMS: %d', pricelist.items.length);
+    debug('');
+    debug('ITEM NAMES');
+    pricelist.items.forEach((el, idx) => {
+        // Add prices
+        el.supplierProducts.forEach((sp) => {
+            sp.supplierCode === "COLES" ? colesTotalPrice += sp.price : wooliesTotalPrice += sp.price;
+            sp.supplierCode === "COLES" ? colesTotalDiscount += sp.discount : wooliesTotalDiscount += sp.discount;
+        })
+        debug(`${pad(el.name, 50)}, #PROD:${el.supplierProducts.length}` );
+    });
+    debug('******************************************************************************');
+    debug(`COLES TOTAL PRICE: ${colesTotalPrice.toFixed(2)}`);
+    debug(`WOOLIES TOTAL PRICE: ${wooliesTotalPrice.toFixed(2)}`);
+    debug(`COLES TOTAL DISCOUNT: ${colesTotalDiscount.toFixed(2)}`);
+    debug(`WOOLIES TOTAL DISCOUNT: ${wooliesTotalDiscount.toFixed(2)}`);
+    debug('******************************************************************************');
+}
 
 // Kick it off
-backupData();
+debug('Fetching prices for %s', APP_NAME)
+searchForList();
